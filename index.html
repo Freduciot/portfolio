@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Amby Thérosien Fréduçiot</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            fadeIn: "fadeIn 2s ease-in forwards"
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: 0 },
+              '100%': { opacity: 1 }
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gradient-to-br from-gray-100 to-white text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow-lg p-8 text-center animate-fadeIn">
+    <h1 class="text-4xl font-extrabold text-gray-800">Amby Thérosien Fréduçiot</h1>
+    <p class="text-gray-600 mt-2 text-lg">Développeur Web Fullstack</p>
+  </header>
+
+  <!-- About -->
+  <section class="p-10 max-w-4xl mx-auto animate-fadeIn">
+    <h2 class="text-3xl font-semibold mb-4 border-b-2 border-gray-300 pb-2">A propos</h2>
+    <p class="text-lg">Je suis un développeur web passionné basé à Madagascar. J'ai participé à la création d'applications web professionnelles allant de la réservation à la gestion de recouvrements. Dynamique, autonome et curieux, je suis toujours prêt à apprendre.</p>
+  </section>
+
+  <!-- Projects -->
+  <section class="p-10 bg-white max-w-4xl mx-auto animate-fadeIn">
+    <h2 class="text-3xl font-semibold mb-4 border-b-2 border-gray-300 pb-2">Projets</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="p-6 border border-gray-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+        <h3 class="text-xl font-bold mb-2">Taxi Finder</h3>
+        <p>Application pour trouver des taxis proches via la géolocalisation.</p>
+        <a href="https://taxi-finder.mg" class="text-blue-600 underline block mt-2">taxi-finder.mg</a>
+      </div>
+      <div class="p-6 border border-gray-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+        <h3 class="text-xl font-bold mb-2">My Invoice</h3>
+        <p>Plateforme de gestion de factures en ligne.</p>
+      </div>
+      <div class="p-6 border border-gray-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+        <h3 class="text-xl font-bold mb-2">Mécanicien.mg</h3>
+        <p>Recherche de garages, lavages auto et mécaniciens à Madagascar.</p>
+        <a href="https://mecanicien.mg" class="text-blue-600 underline block mt-2">mecanicien.mg</a>
+      </div>
+      <div class="p-6 border border-gray-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+        <h3 class="text-xl font-bold mb-2">App de Recouvrement</h3>
+        <p>Gestion de caisses, recouvrements et billetterie (bus,bateau).</p>
+      </div>
+      <div class="p-6 border border-gray-200 rounded-lg shadow hover:shadow-lg transition duration-300">
+        <h3 class="text-xl font-bold mb-2">Freelance App </h3>
+        <p>Transfert de crédit, gestion de paiement de facture</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="p-10 max-w-4xl mx-auto animate-fadeIn">
+    <h2 class="text-3xl font-semibold mb-4 border-b-2 border-gray-300 pb-2">Compétences</h2>
+    <ul class="list-disc pl-6 text-lg">
+      <li><strong>Langages :</strong> PHP, Java, C#</li>
+      <li><strong>Frameworks :</strong> Symfony 5, Vue.js, Angular, Ionic</li>
+      <li><strong>Frontend :</strong> HTML5, CSS3, Bootstrap, jQuery, AJAX</li>
+      <li><strong>Bases de données :</strong> MySQL, PostgreSQL, Oracle, SQLServer</li>
+      <li><strong>Outils :</strong> Git, GitHub</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <footer class="bg-gray-200 p-8 text-center animate-fadeIn">
+    <p class="text-xl font-semibold">Contactez-moi</p>
+    <p class="mt-2">Nanisana II H 10 Bis B, Antananarivo</p>
+    <p class="mt-1">📞 +261 38 77 993 41</p>
+    <p class="mt-1">✉️ <a href="mailto:freduciotamby@gmail.com" class="text-blue-600">freduciotamby@gmail.com</a></p>
+  </footer>
+</body>
+</html>
